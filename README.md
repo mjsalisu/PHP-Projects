@@ -1,3 +1,3 @@
-# BUK Bus Project
+# A Blog Task
 
-### Subject: Mr Yunusa Isa and co
+### Subject: Myself while doing internship at [**WAJEPA Sep, 2020**](https://wajepa.com.ng)
