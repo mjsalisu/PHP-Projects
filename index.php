@@ -1,35 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- include head file -->
-    <?php include('includes/head.php') ?>
-  </head>
-  <body>
-  	<!-- include nav-menu file -->
-    <?php include('includes/nav.php') ?>
-	
-	<?php 
-		
-	?>
-	
-    <!-- include post file -->
-    <?php 
-		
-		if(isset($_SESSION["author_id"]) && isset($_SESSION["author_role"]) ){
-			echo '
-				<div class="alert alert-info text-center" role="alert">
-					Welcome '; echo $_SESSION["author_name"]; echo ' You can now 
-					<a href="add-post.php"><strong>create a post</strong></a>.
-				</div>';
-		}
-	
-		include('includes/all-post.php') 
-	?>
+<head>
+    <title>Materials - Handouts</title>
+    <?php require '_layouts/head.html'; ?>
+</head>
 
-    <!-- include confirmation modal file -->
-    <?php include('includes/confirm-action.php') ?>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+  </div>
 
-    <!-- include foot file -->
-    <?php include('includes/foot.php') ?>
-  </body>
+  <div id="wrapper">
+    <?php require '_layouts/navigation.html'; ?>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+      <div class="container-fluid">
+            <?php require '_layouts/materials-all.html' ?>
+      </div>
+      <!-- /.container-fluid -->
+      <?php require '_layouts/foot-note.html' ?>
+    </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+
+    <?php require '_layouts/footer.html'; ?>
+</body>
+
 </html>

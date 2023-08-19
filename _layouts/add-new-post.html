@@ -1,0 +1,72 @@
+<div class="row bg-title">
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+        <h4 class="page-title">Add New Post</h4>
+    </div>
+    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+        <ol class="breadcrumb">
+            <li><a href="#">Dashboard</a></li>
+            <li class="active">Add New Post</li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<!-- .row -->
+<div class="row ">
+
+    <div class="col-sm-8">
+        <div class="white-box">
+            <h3 class="box-title">Add New Post</h3>
+            <div class="summernote"></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="white-box">
+            <form class="form-material form-horizontal">
+                <div class="form-group">
+                    <label class="col-md-12" for="example-text">Title</span>
+                    </label>
+                    <div class="col-md-12">
+                        <input type="text" id="example-text" name="example-text" class="form-control"
+                            placeholder="enter post title" value="">
+                    </div>
+                </div>
+                <!--<div class="form-group">
+                    <label class="col-sm-12" for="dept">Category</label>
+                    <div class="col-sm-12">
+                        <select class="form-control" id="dept">
+                            <option selected="selected" disabled>Select Category</option>
+                            <option>List Category (General)</option>
+                        </select>
+                        <small class="text-info" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="@mdo">add new category</small>
+                    </div>
+                </div>-->
+                <div class="form-group">
+                    <label class="col-sm-12">Featured Image</label>
+                    <div class="col-sm-12">
+                        <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                            <div class="form-control" data-trigger="fileinput"> <i
+                                    class="glyphicon glyphicon-file fileinput-exists"></i> <span
+                                    class="fileinput-filename"></span></div>
+                            <span class="input-group-addon btn btn-default btn-file"> <span class="fileinput-new">Select
+                                    image</span> <span class="fileinput-exists">Change</span>
+                                <input type="file" accept="image/*" name="..."> </span> <a href="#"
+                                class="input-group-addon btn btn-default fileinput-exists"
+                                data-dismiss="fileinput">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <small class="text-danger">content may be subject to admin approval.</small>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-info waves-effect waves-light m-r-10">Publish</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- /.row -->

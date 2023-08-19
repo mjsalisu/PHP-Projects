@@ -1,0 +1,179 @@
+<div class="row bg-title">
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+        <h4 class="page-title">Upload Material</h4>
+    </div>
+    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+        <ol class="breadcrumb">
+            <li><a href="#">Dashboard</a></li>
+            <li class="active">Upload Material</li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<!-- .row -->
+<div class="row">
+
+    <div class="col-md-12 col-lg-4">
+        <div class="white-box">
+            <h3 class="box-title">Upload Instructions</h3>
+            <p>Contribute to the growing Community by uploading a hand-out or lecture note, Past-Q/A, Post-UTME-Q/A,
+                Project or
+                Assignment.</p>
+            <ul class="common-list">
+                <li><a><i class="fa fa-check text-success"></i>
+                        All materials uploaded are subject to review and might be rejected or approved.
+                    </a></li>
+                <li><a><i class="fa fa-check text-success"></i>
+                        Ensure that all materials to be uploaded are named properly to enable students to locate them
+                        easily.
+                    </a></li>
+                <li><a><i class="fa fa-check text-success"></i>
+                        Upload materials in the following formats 'PDF', 'DOC', 'DOCX', 'PPT', 'PPTX'.
+                    </a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="white-box">
+            <h3 class="box-title m-b-0">Material Classification</h3>
+            <p class="text-muted m-b-30 font-13"> </p>
+            <form class="form-material form-horizontal">
+
+                <div class="form-group">
+                    <label class="col-sm-12" for="category">Category</label>
+                    <div class="col-sm-12">
+                        <select class="form-control" id="category">
+                            <option selected="selected" disabled>Select Category</option>
+                            <option value="GSP">GSP</option>
+                            <option value="Lecture Note">Lecture Note</option>
+                            <option value="Past Question">Past Question</option>
+                            <option value="Post UTME">Post UTME</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group" id="DivInstitution">
+                    <label class="col-sm-12" for="institution">Institution</label>
+                    <div class="col-sm-12">
+                        <select class="form-control" id="institution">
+                            <option selected="selected" disabled>Select Institution</option>
+                            <option>List Institution (e.g. BUK)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="DivFacultyAndDepartment">
+                    <div class="form-group" id="DivFaculty">
+                        <label class="col-sm-12" for="faculty">Faculty</label>
+                        <div class="col-sm-12">
+                            <select class="form-control" id="faculty">
+                                <option selected="selected" disabled>Select Faculty</option>
+                                <option>List Faculty (e.g. Software Engr. In FCSIT)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group" id="DivDepartment">
+                        <label class="col-sm-12" for="department">Department</label>
+                        <div class="col-sm-12">
+                            <select class="form-control" id="department">
+                                <option selected="selected" disabled>Select Department</option>
+                                <option>List Department (e.g. Software Engr. In FCSIT)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="DivLevel">
+                    <label class="col-sm-12" for="level">Level</label>
+                    <div class="col-sm-12">
+                        <select class="form-control" id="level">
+                            <option selected="selected" disabled>Select Level</option>
+                            <option value="">Level 1</option>
+                            <option value="">Level 2</option>
+                            <option value="">Level 3</option>
+                            <option value="">Level 4</option>
+                            <option value="">Level 5</option>
+                            <option value="">Level 6</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-12" for="example-text" id="MaterialTitle">Course Title</span>
+                    </label>
+                    <div class="col-md-12">
+                        <input type="text" id="example-text" name="example-text" class="form-control"
+                            placeholder="enter title" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6" id="MaterialCode">
+                        <label class="col-md-12" for="example-email">Course Code</span>
+                        </label>
+                        <div class="col-md-12">
+                            <input type="text" id="example-email" name="example-email" class="form-control"
+                                placeholder="enter code" value="">
+                        </div>
+                    </div>
+                    <div class="form-group col-3" id="DivType">
+                        <label class=col-md-12" for="department">Type</label>
+                        <div class="col-sm-12">
+                            <select class="form-control" id="versionType">
+                                <option value="Free" selected="selected">Free Version</option>
+                                <option value="Paid" hidden>Paid Version</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-3" id="DivCost">
+                        <label class="col-md-12" for="example-email">Cost</span>
+                        </label>
+                        <div class="col-md-12">
+                            <input type="number" id="example-email" name="example-email" class="form-control"
+                                placeholder="enter cost" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-12" for="example-email">Description</span>
+                    </label>
+                    <div class="col-md-12">
+                        <textarea class="form-control form-control-line" rows="5" spellcheck="true"
+                            placeholder="enter a short description of the material you are uploading"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 ol-md-6 col-xs-12">
+                    <div class="white-box">
+                        <h3 class="box-title"></h3>
+                        <label for="input-file-max-fs">
+                            Attach your fIle
+                            <small>(formats pdf, doc, docx, ppt, pptx)</small>
+                        </label>
+                        <input type="file" id="input-file-max-fs" accept=".pdf, .doc, .docx, .ppt, .pptx"
+                            class="dropify" data-max-file-size="4M" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <button type="reset"
+                            class="btn btn-default btn-outline waves-effect waves-light m-r-10 btn-block">Cancel</button>
+                    </div>
+
+                    <div class="col-6 text-center">
+                        <button type="submit"
+                            class="btn btn-info waves-effect waves-light m-r-10 btn-block">Upload</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+</div>
+<!-- /.row -->

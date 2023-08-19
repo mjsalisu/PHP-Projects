@@ -1,0 +1,155 @@
+<div class="row step-register justify-content-center">
+    <div class="col-lg-8">
+        <div class="white-box">
+            <a href="javascript:void(0)" class="text-center db"><img src="plugins/images/logo.png" alt="Home" />
+                <br />
+                <h2><strong>Handouts</strong></h2>
+            </a>
+            <h4 class="text-muted text-center m-b-30">Welcome, we'd love to see you join us!</h4>
+
+            <div id="createAccount" class="wizard">
+                <ul class="wizard-steps" role="tablist">
+                    <li class="active" role="tab">
+                        <h4><span><i class="ti-user"></i></span>Personal Info</h4>
+                    </li>
+                    <li role="tab">
+                        <h4><span><i class="ti-book"></i></span>Institutional Info</h4>
+                    </li>
+                    <li role="tab">
+                        <h4><span><i class="ti-lock"></i></span>Login Info</h4>
+                    </li>
+                </ul>
+
+                <form id="validation" class="form-material form-horizontal">
+                    <div class="wizard-content">
+                        <div class="wizard-pane row active" role="tabpanel">
+                            <div class="form-group col-md-6">
+                                <label class="col-xs-3 control-label">Full name</label>
+                                <div class="col-xs-5">
+                                    <input type="text" class="form-control" name="fullname"
+                                        placeholder="enter your full name" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="col-xs-3 control-label">Email</label>
+                                <div class="col-xs-5">
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="enter your email address" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="col-xs-3 control-label">Phone</label>
+                                <div class="col-xs-5">
+                                    <input type="text" class="form-control" name="phone"
+                                        placeholder="enter your phone number" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-12">Profile Image</label>
+                                <div class="col-sm-12">
+                                    <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                        <div class="form-control" data-trigger="fileinput"> <i
+                                                class="glyphicon glyphicon-file fileinput-exists"></i>
+                                            <span class="fileinput-filename"></span>
+                                        </div> <span class="input-group-addon btn btn-default btn-file">
+                                            <span class="fileinput-new">Select
+                                                file</span> <span class="fileinput-exists">Change</span>
+                                            <input type="file" name="..." placeholder=""> </span> <a href="#"
+                                            class="input-group-addon btn btn-default fileinput-exists"
+                                            data-dismiss="fileinput">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-pane row" role="tabpanel">
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-12" for="category">Institution</label>
+                                <div class="col-sm-12">
+                                    <select class="form-control" name="institution" required>
+                                        <option selected="selected" disabled>Select Institution</option>
+                                        <option value="ID">List of Institution here...</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-12" for="category">Department</label>
+                                <div class="col-sm-12">
+                                    <select class="form-control" name="department" required>
+                                        <option selected="selected" disabled>Select Department</option>
+                                        <option value="ID">List of Department here...</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="col-sm-12" for="category">Designation</label>
+                                <div class="col-sm-12">
+                                    <select class="form-control" id="designation" name="designation" required>
+                                        <option selected="selected" disabled>Select Designation</option>
+                                        <option value="Student">I am a Student</option>
+                                        <option value="Lecturer">I am a Lecturer</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6" id="DivLecturerEmail">
+                                <label class="col-xs-3 control-label">Your Institutional Email</label>
+                                <div class="col-xs-5">
+                                    <input type="email" class="form-control" name="lecturer_email"
+                                        placeholder="Please enter your institutional email address" required />
+                                </div>
+                                <small class="text-muted text-info">short note why its required</small>
+                            </div>
+
+                            <div class="form-group col-md-6" id="DivSelectLevel">
+                                <label class="col-sm-12" for="Level">Level</label>
+                                <div class="col-sm-12">
+                                    <select class="form-control" name="Level" required>
+                                        <option selected="selected" disabled>Select Level</option>
+                                        <option value="ID">Level 1...</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wizard-pane row" role="tabpanel">
+                            <div class="form-group col-md-6">
+                                <label class="col-xs-3 control-label">Username</label>
+                                <div class="col-xs-5">
+                                    <input type="text" class="form-control" name="username"
+                                        placeholder="choose a username" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="col-xs-3 control-label">Password</label>
+                                <div class="col-xs-5">
+                                    <input type="password" class="form-control" name="password"
+                                        placeholder="choose a password" required />
+                                </div>
+                            </div>
+                        </div>
+
+                        <small class="text-muted">By creating an account, you agree to our
+                            <a href="#" ?>Terms of Service</a> and we can occasionally send you account-related emails.
+                        </small>
+                    </div>
+                </form>
+            </div>
+
+            <hr>
+            <div class="form-group m-b-0">
+                <div class="col-sm-12 text-center">
+                    <p>Already have an account? <a href="login.php" class="text-primary m-l-5"><b>Sign
+                                in</b></a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
